@@ -1,0 +1,21 @@
+# Logfile created on 2025-03-24 15:49:08 +0100 by logger.rb/61378
+I, [2025-03-24T15:49:08.312995 #24278]  INFO -- : Reading json file. input_json_files/users.json
+I, [2025-03-24T15:49:08.313222 #24278]  INFO -- : Json file parse successfully.
+I, [2025-03-24T15:49:08.313303 #24278]  INFO -- : Writing to CSV file: output_csv_files/users.csv
+E, [2025-03-24T15:49:08.313382 #24278] ERROR -- : Error writing to CSV file. no implicit conversion of Array into String
+I, [2025-03-24T15:51:16.311659 #24320]  INFO -- : Reading json file. input_json_files/users.json
+I, [2025-03-24T15:51:16.312574 #24320]  INFO -- : Json file parse successfully.
+I, [2025-03-24T15:51:16.312677 #24320]  INFO -- : Writing to CSV file: output_csv_files/users.csv
+E, [2025-03-24T15:51:16.312767 #24320] ERROR -- : Error writing to CSV file. no implicit conversion of Array into String
+I, [2025-03-24T15:54:29.411321 #24370]  INFO -- : Reading json file. input_json_files/users.json
+I, [2025-03-24T15:54:29.411733 #24370]  INFO -- : Json file parse successfully.
+I, [2025-03-24T15:54:29.411850 #24370]  INFO -- : Writing to CSV file: output_csv_files/users.csv
+E, [2025-03-24T15:54:29.412362 #24370] ERROR -- : Error writing to CSV file. no implicit conversion of String into Integer
+I, [2025-03-24T15:57:12.943824 #24459]  INFO -- : Reading json file. input_json_files/users.json
+I, [2025-03-24T15:57:12.944235 #24459]  INFO -- : Json file parse successfully.
+I, [2025-03-24T15:57:12.944323 #24459]  INFO -- : Writing to CSV file: output_csv_files/users.csv
+E, [2025-03-24T15:57:12.944721 #24459] ERROR -- : Error writing to CSV file. no implicit conversion of String into Integer
+I, [2025-03-24T16:04:11.502008 #24548]  INFO -- : Reading json file. input_json_files/users.json
+I, [2025-03-24T16:04:11.502428 #24548]  INFO -- : Json file parse successfully.
+I, [2025-03-24T16:04:11.502516 #24548]  INFO -- : Writing to CSV file: output_csv_files/users.csv
+I, [2025-03-24T16:04:11.503061 #24548]  INFO -- : CSV file write successfully.

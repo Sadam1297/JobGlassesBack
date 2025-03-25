@@ -11,7 +11,7 @@ class Json_2_CSV
         log_dir = "log"
         Dir.mkdir(log_dir) unless Dir.exist?(log_dir)
     
-        date = Date.today.strftime("%Y-%m-%d")
+        date = Date.today.strftime("%Y_%m-%d")
         log_file = File.join(log_dir, "-#{date}.log")
 
         @log = Logger.new(log_file)
@@ -42,11 +42,10 @@ class Json_2_CSV
             @log.info("Writing to CSV file: #{@output_csv}")
             CSV.open(@output_csv, "w") do |csv|
                 csv << ["profile_id", "email", "tags", "social_id", "picture"]
-
                 data.each do |profile|
                     next unless profile.is_a?(Hash)
                     tags = profile["tags"]&.join("|") || ''
-                    profile["profiles"].each do |network , social|
+                    profile["profiles"].each do |network , social| # network = key (facebook,etc), social = value
                         csv << [
                             profile["id"],
                             profile["email"],

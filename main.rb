@@ -41,8 +41,8 @@ end
   
 converter = Json_2_CSV.new(input_json, output_csv)
 
-input = converter.read_json(input_json)
+input = converter.read_json(input_json) # json -> array/hash to be converted.
 
-converter.write_csv(input)
+converter.write_csv(input) # take array of read json to convert into csv file.
 
 puts "Conversion done. Check the log file for more information."

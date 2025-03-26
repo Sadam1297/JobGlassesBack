@@ -1,1 +1,7 @@
 # Logfile created on 2025-03-24 15:49:08 +0100 by logger.rb/61378
+E, [2025-03-26T21:59:43.866430 #8109] ERROR -- : Error: output_csv_files/users.cs is not a .csv file.
+E, [2025-03-26T21:59:49.678121 #8173] ERROR -- : Error: output_csv_files/users.cs is not a .csv file.
+E, [2025-03-26T22:01:10.525854 #8269] ERROR -- : Error: output_csv_files/users.cs is not a .csv file.
+E, [2025-03-26T22:01:18.381041 #8320] ERROR -- : Error: input_json_files/users.jsn is not a .json file.
+E, [2025-03-26T22:01:35.428811 #8375] ERROR -- : Error: input_json_files/users.jsn is not a .json file.
+E, [2025-03-26T22:04:00.994346 #8508] ERROR -- : Error: Missing input_json or output_csv file.

@@ -12,6 +12,7 @@ log.level = Logger::INFO
 if !input_json || !output_csv
     log.error("Error: Missing input_json or output_csv file.")
     #puts "log: check log files to see the error."
+    puts "Argument error check log file for more information."
     exit
 end
 
@@ -20,6 +21,7 @@ end
 unless File.extname(input_json) == ".json"
     log.error("Error: #{input_json} is not a .json file.")
     #puts "log: input file must be a .json file"
+    puts "Check log file for this json error."
     exit
 end
 
@@ -28,6 +30,7 @@ end
 unless File.extname(output_csv) == ".csv"
     log.error("Error: #{output_csv} is not a .csv file.")
     #puts "log: output file must be a .csv file"
+    puts "Check log file for this csv error."
     exit
 end
 
@@ -36,6 +39,7 @@ end
 unless File.exist?(input_json)
     log.error("Error: Input file '#{input_json}' does not exist.")
     #puts "log: input file not found"
+    puts "Check log file, it seems to be a file who doesn't exist."
     exit
 end
   

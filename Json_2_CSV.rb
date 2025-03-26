@@ -41,7 +41,13 @@ class Json_2_CSV
         begin # In that case we can erase it, but usefull to keep it for future use or extern error handling
             @log.info("Writing to CSV file: #{@output_csv}")
             CSV.open(@output_csv, "w") do |csv|
-                csv << ["profile_id", "email", "tags", "social_id", "picture"]
+                csv << [
+                    "profile_id",
+                    "email",
+                    "tags",
+                    "social_id",
+                    "picture"
+                ]
                 data.each do |profile|
                     next unless profile.is_a?(Hash)
                     tags = profile["tags"]&.join("|") || ''
